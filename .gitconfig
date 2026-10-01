@@ -1,0 +1,12 @@
+[user]
+	name = ishwaryagopalakrishnan
+	email = ishwaryagopalakrishnann30@gmail.com
+[init]
+	defaultBranch = main
+[safe]
+	directory = C:/Users/ishwa/Documents/Codex/2026-05-08/create-a-learning-management-system-website
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

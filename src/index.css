@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-radial-\[at_34\%_28\%\] {
+    background-image: radial-gradient(circle at 34% 28%, rgba(29, 78, 216, 0.20) 0%, rgba(29, 78, 216, 0.10) 80%);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Hide header phone and appointment CTA on Mobile Small, Mobile, and Mobile Large (< 768px) when menu is opened */
+@media screen and (max-width: 767px) {
+  header.is-menu-open a[href^="tel:"],
+  header.is-menu-open a[href="#appointment"]:not(.w-full),
+  header:has(button[aria-expanded="true"]) a[href^="tel:"],
+  header:has(button[aria-expanded="true"]) a[href="#appointment"]:not(.w-full) {
+    display: none !important;
+  }
+}

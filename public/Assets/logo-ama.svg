@@ -1,0 +1,6 @@
+<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="18" cy="18" r="17" fill="#FAF5FF" stroke="#F3E8FF" stroke-width="0.8"/>
+  <text x="14" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="900" fill="#4A154B" letter-spacing="-0.02em">AMA</text>
+  <line x1="26" y1="11" x2="26" y2="25" stroke="#4A154B" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M24 14C27 15 27 18 24 19C27 20 27 23 24 24" stroke="#7E22CE" stroke-width="1" fill="none"/>
+</svg>
